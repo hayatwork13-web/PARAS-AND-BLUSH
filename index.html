@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paras Blush Beauty Salon | Luxury Ladies Salon & Bridal Studio Hyderabad</title>
+    
+    <!-- Google Fonts for Luxury & Premium Vibes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Premium Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo-link">
+          <div class="logo-mark">P</div>
+          <div class="logo-text">
+            PARAS BLUSH
+            <span>Beauty Salon & Bridal Studio</span>
+          </div>
+        </a>
+        
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#bridal" class="nav-link">Bridal Studio</a></li>
+          <li><a href="#custom-package" class="nav-link">Package Planner</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book an appointment." target="_blank" class="btn btn-primary btn-header">
+            <i data-lucide="phone-call"></i> Book Now
+          </a>
+          <button class="mobile-toggle" aria-label="Toggle navigation">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <!-- Abstract Decorative Lines (Vector SVGs) -->
+      <svg class="sparkle-decor" style="top: 15%; left: 8%;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M5.6 18.4L18.4 5.6"/>
+      </svg>
+      <svg class="sparkle-decor" style="top: 25%; right: 45%; animation-delay: 1.5s;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 3v18M3 12h18"/>
+      </svg>
+      <svg class="sparkle-decor" style="bottom: 15%; left: 45%; animation-delay: 0.8s;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/>
+      </svg>
+      
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal class="active">
+          <div class="rating-badge">
+            <i data-lucide="star" fill="currentColor"></i>
+            <span><strong>4.9 Stars</strong> | 36 Verified Reviews</span>
+          </div>
+          <h1 class="hero-title">
+            <span>Welcome to Paras Blush Salon</span>
+            Luxury Beauty &<br>Bridal Experience
+          </h1>
+          <p class="hero-desc">
+            Premium beauty treatments, master bridal makeovers, signature hair artistry, and high-end skincare therapies designed to celebrate the modern woman in Hyderabad.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book Appointment</a>
+            <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a luxury beauty consultation." target="_blank" class="btn btn-whatsapp">
+              <i data-lucide="message-circle"></i> Chat On WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Side: Interactive Quick Experience Planner -->
+        <div class="hero-visual" data-reveal style="animation-delay: 0.2s;">
+          <div class="luxury-frame">
+            <h3 class="interactive-planner-title">Instant Service Booking</h3>
+            <p style="text-align: center; font-size: 0.85rem; margin-top: -1rem; margin-bottom: 1.5rem;">Select services below to instantly build your package:</p>
+            
+            <div class="planner-services">
+              <div class="planner-item active" data-name="Signature Bridal Makeup" data-price="35000">
+                <div class="planner-info">
+                  <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                  <span class="planner-name">Signature Bridal Makeup</span>
+                </div>
+                <span class="planner-price">PKR 35,000</span>
+              </div>
+              
+              <div class="planner-item" data-name="Premium Glow HydraFacial" data-price="8000">
+                <div class="planner-info">
+                  <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                  <span class="planner-name">Premium Glow HydraFacial</span>
+                </div>
+                <span class="planner-price">PKR 8,000</span>
+              </div>
+
+              <div class="planner-item" data-name="Luxury Keratin Therapy" data-price="18000">
+                <div class="planner-info">
+                  <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                  <span class="planner-name">Luxury Keratin Therapy</span>
+                </div>
+                <span class="planner-price">PKR 18,000</span>
+              </div>
+
+              <div class="planner-item" data-name="Royal Mani-Pedi Treatment" data-price="4500">
+                <div class="planner-info">
+                  <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                  <span class="planner-name">Royal Mani-Pedi Treatment</span>
+                </div>
+                <span class="planner-price">PKR 4,500</span>
+              </div>
+            </div>
+
+            <div class="planner-summary">
+              <div>
+                <span class="summary-label">Selected (<span id="planner-count">1</span>)</span>
+              </div>
+              <div>
+                <span class="summary-total" id="planner-total">PKR 35,000</span>
+              </div>
+            </div>
+
+            <a href="#" target="_blank" class="btn btn-whatsapp" id="hero-planner-btn" style="width: 100%;">
+              <i data-lucide="send"></i> Book Selected on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <div class="container" style="position: relative; z-index: 10;">
+      <div class="stats-bar" data-reveal>
+        <div class="stat-item">
+          <div class="stat-number">4.9 ★</div>
+          <div class="stat-label">Google Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">36+</div>
+          <div class="stat-label">Verified Reviews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8+ Yrs</div>
+          <div class="stat-label">Master Artistry</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1,500+</div>
+          <div class="stat-label">Happy Brides</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div data-reveal>
+            <span class="section-subtitle">Since 2018</span>
+            <h2 class="section-title">The Art of Luxury Beauty & Glamour</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Paras Blush Beauty Salon has grown to become Hyderabad's most esteemed ladies-only sanctuary. We specialize in transforming everyday moments into timeless statements of grace and confidence.
+            </p>
+            <p class="section-desc" style="margin-bottom: 2.5rem;">
+              Led by our master salon designers and bridal beauticians, we use only premium, dermatologist-tested international cosmetic brands. Every service is a personal celebration, custom-tailored with outstanding artistic precision.
+            </p>
+            
+            <div class="about-features">
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i data-lucide="award"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Bridal & Makeover Experts</h4>
+                  <p class="section-desc" style="font-size: 0.9rem;">Renowned for creating radiant, bespoke bridal makeovers that highlight your natural royalty.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <i data-lucide="shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Strict Medical Hygiene Standards</h4>
+                  <p class="section-desc" style="font-size: 0.9rem;">Hospital-grade tool sterilization, continuous sanitization, and clean premium single-use products.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Right: standards card -->
+          <div data-reveal style="animation-delay: 0.2s;">
+            <div class="standards-card">
+              <h3 class="standards-title">Our Premium Standards</h3>
+              <p style="text-align: center; font-size: 0.9rem; margin-bottom: 2rem;">A commitment to unmatched luxury services, safe therapies, and ultimate client satisfaction.</p>
+              
+              <ul class="standards-list">
+                <li>
+                  <i data-lucide="check-circle-2"></i>
+                  <div>
+                    <strong>100% Genuine Brands</strong>
+                    <p style="font-size: 0.85rem;">Using only authentic Mac, Huda Beauty, Anastasia Beverly Hills, Kryolan, and Dermalogica.</p>
+                  </div>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2"></i>
+                  <div>
+                    <strong>Certified Master Stylists</strong>
+                    <p style="font-size: 0.85rem;">Continuous international training to stay at the cutting-edge of hairstyles, treatments, and glow-ups.</p>
+                  </div>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2"></i>
+                  <div>
+                    <strong>Private Treatment Chambers</strong>
+                    <p style="font-size: 0.85rem;">Peaceful, separate spa and facial rooms for fully relaxed personalized treatments.</p>
+                  </div>
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2"></i>
+                  <div>
+                    <strong>Complimentary Tea & Consultation</strong>
+                    <p style="font-size: 0.85rem;">Enjoy professional, custom skin and hair consulting before every single therapy session.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Exquisite Offerings</span>
+          <h2 class="section-title">Our Signature Services & Treatments</h2>
+          <p class="section-desc">Explore our carefully structured categories. All treatments include a customized pre-service diagnostic consultation with our specialists.</p>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="tabs-container" data-reveal>
+          <button class="tab-btn active" data-filter="all">All Services</button>
+          <button class="tab-btn" data-filter="bridal-makeup">Bridal Studio</button>
+          <button class="tab-btn" data-filter="makeup">Party Makeup</button>
+          <button class="tab-btn" data-filter="hair">Hair Styling & Care</button>
+          <button class="tab-btn" data-filter="skincare">Skincare & Facials</button>
+          <button class="tab-btn" data-filter="nails">Manicure & Nails</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" data-reveal>
+          
+          <!-- Bridal Category -->
+          <div class="service-card" data-category="bridal-makeup">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Signature Royal Bridal Makeup</h4>
+                <span class="service-price">PKR 35,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 4 Hours</span>
+                <span><i data-lucide="sparkles"></i> Signature</span>
+              </div>
+              <p class="service-desc">Complete luxury bridal makeover including high-definition cosmetics, master hair styling, jewelry settings, and elegant bridal draping.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Signature Royal Bridal Makeup (PKR 35,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="bridal-makeup">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">VIP Luxury Mehndi & Dholki Makeup</h4>
+                <span class="service-price">PKR 20,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 2.5 Hours</span>
+                <span><i data-lucide="heart"></i> Elegant Glow</span>
+              </div>
+              <p class="service-desc">Light and luminous look focusing on flawless glassy skin, dewy makeup textures, and custom traditional mehndi hair styling.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a VIP Luxury Mehndi %26 Dholki Makeup (PKR 20,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <!-- Makeup Category -->
+          <div class="service-card" data-category="makeup">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Glamour Party Makeup</h4>
+                <span class="service-price">PKR 10,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 1.5 Hours</span>
+                <span><i data-lucide="star"></i> Popular</span>
+              </div>
+              <p class="service-desc">Premium party makeover featuring high-contrast smoky eyes or glass skin glow, luxury lashes, and stylish standard hair setting.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Glamour Party Makeup (PKR 10,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="makeup">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Classic Engagement Makeup</h4>
+                <span class="service-price">PKR 15,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 2.5 Hours</span>
+                <span><i data-lucide="gem"></i> Luxury Style</span>
+              </div>
+              <p class="service-desc">Timeless, soft dewy finish look with high-definition pigments, highlighting your natural beauty, matching your special outfit.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Classic Engagement Makeup (PKR 15,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <!-- Hair Category -->
+          <div class="service-card" data-category="hair">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Luxury Protein & Keratin Treatment</h4>
+                <span class="service-price">PKR 18,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 3 Hours</span>
+                <span><i data-lucide="sparkle"></i> Intensive</span>
+              </div>
+              <p class="service-desc">Eliminate frizz and restore optimal strength, shine, and structural sleekness to your hair with our premium keratin infusions.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Luxury Protein %26 Keratin Treatment (PKR 18,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="hair">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Hair Cut, Wash & Master Blow-Dry</h4>
+                <span class="service-price">PKR 4,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 1 Hour</span>
+                <span><i data-lucide="smile"></i> Everyday Care</span>
+              </div>
+              <p class="service-desc">Trendy cuts custom-suited for your face shape, followed by deep protein washing and a professional bouncy blow dry.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Hair Cut, Wash %26 Master Blow-Dry (PKR 4,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <!-- Skincare Category -->
+          <div class="service-card" data-category="skincare">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Premium Glow HydraFacial</h4>
+                <span class="service-price">PKR 8,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 1.2 Hours</span>
+                <span><i data-lucide="flower-2"></i> Multi-Step</span>
+              </div>
+              <p class="service-desc">Advanced medical facial involving deep exfoliation, painless blackhead extraction, deep hydration, and peptide glow serum infusion.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Premium Glow HydraFacial (PKR 8,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-category="skincare">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Derma Deep Cleansing Therapy</h4>
+                <span class="service-price">PKR 5,000</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 1 Hour</span>
+                <span><i data-lucide="shield"></i> Pure Care</span>
+              </div>
+              <p class="service-desc">Dermatologist-formulated cleansing designed to unclog pores, soothe inflammation, and restore natural skin balance.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Derma Deep Cleansing Therapy (PKR 5,000)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+          <!-- Nails Category -->
+          <div class="service-card" data-category="nails">
+            <div>
+              <div class="service-header">
+                <h4 class="service-title">Royal Luxury Manicure & Pedicure</h4>
+                <span class="service-price">PKR 4,500</span>
+              </div>
+              <div class="service-meta">
+                <span><i data-lucide="clock"></i> 1.5 Hours</span>
+                <span><i data-lucide="sparkle"></i> Pamper</span>
+              </div>
+              <p class="service-desc">Dead skin cell scrubbing, hydrating rose water masking, relaxing cream massage, and neat shaping of nails.</p>
+            </div>
+            <div class="service-action">
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a Royal Luxury Manicure %26 Pedicure (PKR 4,500)." target="_blank" class="btn btn-outline-gold" style="width: 100%;">Book This Service</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Promise</span>
+          <h2 class="section-title">Why Hyderabad Prefers Paras Blush</h2>
+          <p class="section-desc">Providing high-end salon comfort, advanced beautification standards, and highly personalized care since day one.</p>
+        </div>
+
+        <div class="why-grid" data-reveal>
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="sparkles"></i></div>
+            <h3 class="why-title">Certified Beauty Experts</h3>
+            <p class="why-desc">Our team has extensive training under top international bridal beauty makeup artists, ensuring high-end skill sets.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="gem"></i></div>
+            <h3 class="why-title">100% Premium Products</h3>
+            <p class="why-desc">We strictly use authentic high-end products (MAC, Kryolan, Dermalogica) to preserve the safety of your skin.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="crown"></i></div>
+            <h3 class="why-title">Luxury Experience</h3>
+            <p class="why-desc">Step into a beautifully decorated, fully temperature-controlled, elegant environment designed to let you completely relax.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="shield-check"></i></div>
+            <h3 class="why-title">Strict Hygiene Levels</h3>
+            <p class="why-desc">Disinfected spaces, single-use materials, sanitized towels, and sterile salon tools for absolute wellness.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="heart"></i></div>
+            <h3 class="why-title">Personalized Care</h3>
+            <p class="why-desc">No rushed processes. We conduct exhaustive, free consultations before commencing any hair, skin, or cosmetic service.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i data-lucide="thumbs-up"></i></div>
+            <h3 class="why-title">Trusted Beauty Brand</h3>
+            <p class="why-desc">Serving over 1,500 brides and retaining a flawless 4.9 rating with verified reviews in Defence Hyderabad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bridal Experience Section -->
+    <section id="bridal" class="section section-bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Bridal Studio Excellence</span>
+          <h2 class="section-title">The Bridal Makeover Journey</h2>
+          <p class="section-desc">Experience royal treatments crafted to make your dream bridal look a glowing, breathtaking reality on your big day.</p>
+        </div>
+
+        <div class="bridal-grid" data-reveal>
+          <div class="bridal-card">
+            <span class="bridal-badge">Signature Package</span>
+            <div>
+              <h3 class="bridal-card-title">Signature Royal Bridal Makeover</h3>
+              <ul class="bridal-features-list">
+                <li><i data-lucide="check"></i> 4-Step Professional HD Makeup</li>
+                <li><i data-lucide="check"></i> Luxury Eyelash Extension Fit</li>
+                <li><i data-lucide="check"></i> Royal Hair Styling & Draping</li>
+                <li><i data-lucide="check"></i> Jewelry setting & Veil adjustment</li>
+                <li><i data-lucide="check"></i> Premium Glowing Body Shimmer</li>
+              </ul>
+            </div>
+            <div class="bridal-card-footer">
+              <span class="bridal-price">PKR 35,000</span>
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book the Signature Royal Bridal Makeover package (PKR 35,000)." target="_blank" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+
+          <div class="bridal-card">
+            <span class="bridal-badge">Valima & Reception</span>
+            <div>
+              <h3 class="bridal-card-title">Barat & Valima Glamour Deluxe</h3>
+              <ul class="bridal-features-list">
+                <li><i data-lucide="check"></i> Airbrush or HD Glow Finish</li>
+                <li><i data-lucide="check"></i> Advanced Hairstyle trial & set</li>
+                <li><i data-lucide="check"></i> Dupatta setting & Jewelry fit</li>
+                <li><i data-lucide="check"></i> Organic pre-makeup skin cooling</li>
+                <li><i data-lucide="check"></i> Customized styling advice</li>
+              </ul>
+            </div>
+            <div class="bridal-card-footer">
+              <span class="bridal-price">PKR 30,000</span>
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book the Barat %26 Valima Glamour Deluxe package (PKR 30,000)." target="_blank" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+
+          <div class="bridal-card">
+            <span class="bridal-badge">Engagement Glow</span>
+            <div>
+              <h3 class="bridal-card-title">Classic Engagement & Nikkah Glam</h3>
+              <ul class="bridal-features-list">
+                <li><i data-lucide="check"></i> Luminous soft dewy makeup</li>
+                <li><i data-lucide="check"></i> Romantic curls or elegant updos</li>
+                <li><i data-lucide="check"></i> Veil setting & Dupatta pinning</li>
+                <li><i data-lucide="check"></i> Hand and neck skin balancing</li>
+                <li><i data-lucide="check"></i> Long-wear hydration setting spray</li>
+              </ul>
+            </div>
+            <div class="bridal-card-footer">
+              <span class="bridal-price">PKR 15,000</span>
+              <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book the Classic Engagement %26 Nikkah Glam package (PKR 15,000)." target="_blank" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Interactive Package Estimator Section -->
+    <section id="custom-package" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Luxury Customizer</span>
+          <h2 class="section-title">Plan Your Personalized Beauty Package</h2>
+          <p class="section-desc">Create your customized treatment plan. Tick your favorite services to calculate total and book directly over WhatsApp!</p>
+        </div>
+
+        <div class="estimator-box" data-reveal>
+          <div class="estimator-grid">
+            <div class="estimator-options-container">
+              <h4 class="estimator-header-mini">1. Choose Services</h4>
+              
+              <div class="estimator-checkbox-group">
+                <div class="estimator-label-item" data-name="Signature Bridal Makeup" data-price="35000">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Signature Bridal Makeup</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 35,000</span>
+                </div>
+
+                <div class="estimator-label-item" data-name="Party Makeup Glam" data-price="10000">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Party Makeup Glam</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 10,000</span>
+                </div>
+
+                <div class="estimator-label-item" data-name="Premium Glow HydraFacial" data-price="8000">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Premium Glow HydraFacial</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 8,000</span>
+                </div>
+
+                <div class="estimator-label-item" data-name="Luxury Hair Keratin Treatment" data-price="18000">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Luxury Hair Keratin Treatment</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 18,000</span>
+                </div>
+
+                <div class="estimator-label-item" data-name="Royal Manicure & Pedicure" data-price="4500">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Royal Manicure & Pedicure</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 4,500</span>
+                </div>
+
+                <div class="estimator-label-item" data-name="Derma Deep Cleansing Therapy" data-price="5000">
+                  <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <input type="checkbox" style="display:none;">
+                    <div class="planner-checkbox"><i data-lucide="check"></i></div>
+                    <span style="font-weight: 500;">Derma Deep Cleansing Therapy</span>
+                  </div>
+                  <span style="font-family: var(--font-accent); font-weight:600; color:var(--accent-pink);">PKR 5,000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Estimator Right display box -->
+            <div class="estimator-right">
+              <div>
+                <h4 class="estimator-right-title">Your Custom Package</h4>
+                <p style="font-size:0.85rem; color:var(--text-muted);">Summary of selected services:</p>
+              </div>
+
+              <ul class="estimator-selected-list" id="estimator-selected-list">
+                <!-- Dynamically populated -->
+              </ul>
+
+              <div>
+                <p style="font-size:0.8rem; text-transform:uppercase; font-family:var(--font-accent); letter-spacing:0.05em; font-weight:600;">Total Estimated Price</p>
+                <div class="estimator-total-display" id="estimator-total">PKR 0</div>
+                <a href="#" target="_blank" class="btn btn-whatsapp" id="estimator-booking-btn" style="width: 100%;">
+                  <i data-lucide="send"></i> Book Custom Package
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Client Stories</span>
+          <h2 class="section-title">Breathtaking Reviews from Verified Clients</h2>
+          <p class="section-desc">We thrive on the confidence we inspire. Read what our lovely ladies of Hyderabad say about our luxury salon experience.</p>
+        </div>
+
+        <div class="testimonials-grid" data-reveal>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+            </div>
+            <p class="testimonial-text">
+              "Paras Blush Salon did my Bridal makeover, and I was completely amazed! The skin glow, the eye makeup, and dupatta draping were absolute perfection. All my relatives praised me. Highly recommend them for bridal makeovers in Civil Lines!"
+            </p>
+            <div class="testimonial-user">
+              <div class="testimonial-avatar">SA</div>
+              <div>
+                <h4 class="testimonial-name">Sana Alvi</h4>
+                <p class="testimonial-role">Verified Bride (Google Review)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+            </div>
+            <p class="testimonial-text">
+              "I regular visit this salon for HydraFacial and Keratin treatments. They use 100% genuine products, and their hygiene standards are extremely high compared to other salons in Hyderabad. The atmosphere is peaceful and very luxury!"
+            </p>
+            <div class="testimonial-user">
+              <div class="testimonial-avatar">ZM</div>
+              <div>
+                <h4 class="testimonial-name">Zainab Malik</h4>
+                <p class="testimonial-role">Regular Client (Google Review)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+            </div>
+            <p class="testimonial-text">
+              "I got my Party Makeup done from Paras Blush for my sister's wedding. They gave me a beautiful soft dewy look that lasted all night without creasing! The staff is very polite and certified experts. Outstanding service!"
+            </p>
+            <div class="testimonial-user">
+              <div class="testimonial-avatar">FN</div>
+              <div>
+                <h4 class="testimonial-name">Fatima Noor</h4>
+                <p class="testimonial-role">Verified Client (Google Review)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+              <i data-lucide="star" fill="currentColor"></i>
+            </div>
+            <p class="testimonial-text">
+              "Outstanding customer care! From the free herbal consultation tea to the master wash and blow-dry, everything feels highly premium and premium. I am extremely satisfied and will always come back to Paras Blush Salon."
+            </p>
+            <div class="testimonial-user">
+              <div class="testimonial-avatar">AY</div>
+              <div>
+                <h4 class="testimonial-name">Ayesha Yousuf</h4>
+                <p class="testimonial-role">Verified Client (Google Review)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Booking Banner -->
+    <section class="cta-banner">
+      <div class="container" style="position: relative; z-index: 2;">
+        <h2 class="cta-title">Your Absolute Beauty Transformation Awaits</h2>
+        <p class="cta-desc">Book your slot today and step into Hyderabad's premier ladies salon. Let our master artists manifest your ultimate beauty potential.</p>
+        <a href="https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a luxury beauty makeover session." target="_blank" class="btn btn-primary" style="background: linear-gradient(135deg, var(--accent-pink) 0%, #E98CA4 100%);">
+          <i data-lucide="message-circle"></i> Quick Book Via WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact & Booking Form Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info-block" data-reveal>
+            <div>
+              <span class="section-subtitle">Get in Touch</span>
+              <h2 class="section-title">Our Premium Studio Location</h2>
+              <p class="section-desc" style="margin-bottom: 1.5rem;">We are conveniently situated in the premium residential heart of Bismillah City, Civil Lines, Hyderabad.</p>
+              <div class="status-indicator status-open" id="salon-status">
+                <i data-lucide="circle-dot"></i> Loading Status...
+              </div>
+            </div>
+
+            <!-- Detailed contacts -->
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h4 class="contact-item-title">Salon Address</h4>
+                <p class="contact-item-value">House no 2/1, opposite Bilal Masjid, Bismillah City Defence Civil Lines, Hyderabad, Sindh, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <h4 class="contact-item-title">Phone & WhatsApp</h4>
+                <p class="contact-item-value" style="font-weight: 600; color: var(--accent-pink);">+92 333 2757343</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <h4 class="contact-item-title">Salon Operating Hours</h4>
+                <ul class="contact-hours-list">
+                  <li><span>Monday - Sunday:</span> <strong>11:00 AM - 8:30 PM</strong></li>
+                  <li><span>Ladies Only Studio:</span> <strong>Strict Privacy Maintained</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Stylized Google Maps Placeholder -->
+            <div class="vector-map-container">
+              <div class="vector-map-bg" style="background: radial-gradient(circle, #FCEEF5 20%, #FFF8FB 100%);">
+                <!-- Decorative SVG map grid grid lines -->
+                <svg width="100%" height="100%" style="opacity: 0.15;">
+                  <line x1="10%" y1="0" x2="10%" y2="100%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="30%" y1="0" x2="30%" y2="100%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="50%" y1="0" x2="50%" y2="100%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="70%" y1="0" x2="70%" y2="100%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="90%" y1="0" x2="90%" y2="100%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="0" y1="20%" x2="100%" y2="20%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="0" y1="50%" x2="100%" y2="50%" stroke="#2C2C2C" stroke-width="1"/>
+                  <line x1="0" y1="80%" x2="100%" y2="80%" stroke="#2C2C2C" stroke-width="1"/>
+                  <!-- Curved paths to simulate roads -->
+                  <path d="M 0 30 Q 150 150 300 100 T 600 200" fill="none" stroke="#2C2C2C" stroke-width="2"/>
+                  <path d="M 50 0 Q 200 180 350 250" fill="none" stroke="#2C2C2C" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="vector-map-content">
+                <div class="vector-map-icon"><i data-lucide="map-pin"></i></div>
+                <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem;">Paras Blush Salon</h4>
+                <p style="font-size: 0.8rem; margin-bottom: 1rem; max-width: 300px;">Bismillah City, opposite Bilal Masjid, Civil Lines, Hyderabad</p>
+                <a href="https://maps.google.com/?q=Paras+Blush+Beauty+Salon+Hyderabad+Sindh" target="_blank" class="btn btn-secondary btn-sm">
+                  <i data-lucide="navigation"></i> Open Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Booking Form -->
+          <div data-reveal style="animation-delay: 0.2s;">
+            <form id="salon-contact-form" class="contact-form">
+              <h3 class="form-title">Reserve Your Slot</h3>
+              <p style="font-size: 0.9rem; margin-top: -1rem; margin-bottom: 2rem;">Fill in your appointment request details. You will be redirected to confirm via WhatsApp instantly.</p>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Full Name *</label>
+                  <input type="text" id="form-name" class="form-control" placeholder="Ayesha Khan" required />
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="form-phone">WhatsApp Number *</label>
+                  <input type="tel" id="form-phone" class="form-control" placeholder="+92 333 1234567" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-service">Select Treatment *</label>
+                  <select id="form-service" class="form-control" required>
+                    <option value="" disabled selected>Choose a category...</option>
+                    <option value="Signature Royal Bridal Makeup">Signature Royal Bridal Makeup (PKR 35,000)</option>
+                    <option value="VIP Mehndi & Dholki Makeup">VIP Mehndi & Dholki Makeup (PKR 20,000)</option>
+                    <option value="Glamour Party Makeup">Glamour Party Makeup (PKR 10,000)</option>
+                    <option value="Classic Engagement Makeup">Classic Engagement Makeup (PKR 15,000)</option>
+                    <option value="Luxury Protein & Keratin Treatment">Luxury Protein & Keratin Treatment (PKR 18,000)</option>
+                    <option value="Hair Cut, Wash & Blow-Dry">Hair Cut, Wash & Blow-Dry (PKR 4,000)</option>
+                    <option value="Premium Glow HydraFacial">Premium Glow HydraFacial (PKR 8,000)</option>
+                    <option value="Derma Deep Cleansing Therapy">Derma Deep Cleansing Therapy (PKR 5,000)</option>
+                    <option value="Royal Luxury Manicure & Pedicure">Royal Luxury Manicure & Pedicure (PKR 4,500)</option>
+                    <option value="Custom Tailored Beauty Package">Custom Tailored Beauty Package (Planner Total)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-date">Preferred Date *</label>
+                  <input type="date" id="form-date" class="form-control" required />
+                </div>
+
+                <div class="form-group form-group-full">
+                  <label class="form-label" for="form-notes">Special Instructions (Optional)</label>
+                  <textarea id="form-notes" class="form-control" placeholder="Let us know if you have specific allergies, requests or styling ideas..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="calendar"></i> Submit Appointment Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-mark">P</div>
+            <div class="footer-logo-text">
+              PARAS BLUSH
+              <span>Beauty Salon & Bridal Studio</span>
+            </div>
+          </div>
+          <p class="footer-desc">Hyderabad's leading luxury ladies-only boutique salon and master bridal studio. Manifesting glowing, premium transformations since 2018.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="https://wa.me/923332757343" target="_blank" class="social-btn" aria-label="WhatsApp"><i data-lucide="message-square"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#bridal">Bridal Studio</a></li>
+            <li><a href="#custom-package">Package Planner</a></li>
+            <li><a href="#contact">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Bridal Makeup</a></li>
+            <li><a href="#services">Party Makeup</a></li>
+            <li><a href="#services">Keratin Therapy</a></li>
+            <li><a href="#services">Glow HydraFacial</a></li>
+            <li><a href="#services">Royal Mani-Pedi</a></li>
+            <li><a href="#services">Custom Packages</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i data-lucide="map-pin"></i>
+              <span>House no 2/1, opp Bilal Masjid, Bismillah City Defence Civil Lines, Hyderabad, Pakistan</span>
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <span>+92 333 2757343</span>
+            </li>
+            <li>
+              <i data-lucide="mail"></i>
+              <span>parasblush@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Paras Blush Beauty Salon. All rights reserved. Ladies Only Sanctuary.</p>
+        <p>Premium Design &amp; Craftsmanship | 100% Secure Client Confidentiality</p>
+      </div>
+    </footer>
+
+    <!-- Lucide Icons Library & Main JS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

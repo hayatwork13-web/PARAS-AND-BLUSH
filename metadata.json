@@ -1,0 +1,6 @@
+{
+  "name": "Paras Blush Beauty Salon",
+  "description": "Luxury Ladies Beauty Salon & Bridal Studio in Hyderabad, Sindh, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
