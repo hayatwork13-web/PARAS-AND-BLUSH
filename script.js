@@ -1,9 +1,50 @@
 /* 
  * Paras Blush Beauty Salon - Main Script
  * Handles custom interactive features, dynamic opening hours, tab filters, and WhatsApp integration.
+ * 
+ * TO CHANGE THE PHONE NUMBER AND WHATSAPP NUMBER:
+ * Just change the values in the SALON_CONTACT_CONFIG object below!
+ * The script will automatically update all links, buttons, and text across the entire website.
  */
 
+const SALON_CONTACT_CONFIG = {
+  // The phone number shown to users on the website
+  phoneDisplay: "+92 333 2757145",
+  
+  // The phone number used for WhatsApp links (only digits, including country code)
+  whatsappNumber: "923332757145"
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Automatically update all contact numbers and links in the HTML
+  const updateContactNumbers = () => {
+    // 1. Update WhatsApp links
+    const waLinks = document.querySelectorAll('a[href*="wa.me"]');
+    waLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.includes('923332757343')) {
+        link.setAttribute('href', href.replaceAll('923332757343', SALON_CONTACT_CONFIG.whatsappNumber));
+      }
+      if (href && href.includes('923332757145')) {
+        link.setAttribute('href', href.replaceAll('923332757145', SALON_CONTACT_CONFIG.whatsappNumber));
+      }
+    });
+
+    // 2. Update visible text numbers on the page dynamically
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while (node = walker.nextNode()) {
+      if (node.nodeValue.includes("+92 333 2757343")) {
+        node.nodeValue = node.nodeValue.replaceAll("+92 333 2757343", SALON_CONTACT_CONFIG.phoneDisplay);
+      }
+      if (node.nodeValue.includes("+92 333 2757145")) {
+        node.nodeValue = node.nodeValue.replaceAll("+92 333 2757145", SALON_CONTACT_CONFIG.phoneDisplay);
+      }
+    }
+  };
+  
+  updateContactNumbers();
+
   // Initialize Lucide Icons
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
@@ -154,12 +195,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Generate WhatsApp link dynamically
         const servicesText = selectedServices.map(s => `• ${s.name} (PKR ${s.price.toLocaleString()})`).join('%0A');
         const waMessage = `Hello Paras Blush Salon, I would like to book the following personalized package:%0A%0A${servicesText}%0A%0ATotal Price: PKR ${total.toLocaleString()}%0A%0APlease let me know your availability.`;
-        heroPlannerBtn.setAttribute('href', `https://wa.me/923332757343?text=${waMessage}`);
+        heroPlannerBtn.setAttribute('href', `https://wa.me/${SALON_CONTACT_CONFIG.whatsappNumber}?text=${waMessage}`);
       } else {
         heroPlannerBtn.disabled = true;
         heroPlannerBtn.style.opacity = '0.5';
         heroPlannerBtn.style.pointerEvents = 'none';
-        heroPlannerBtn.setAttribute('href', 'https://wa.me/923332757343?text=Hello Paras Blush Salon, I would like to book a luxury beauty consultation.');
+        heroPlannerBtn.setAttribute('href', `https://wa.me/${SALON_CONTACT_CONFIG.whatsappNumber}?text=Hello Paras Blush Salon, I would like to book a luxury beauty consultation.`);
       }
     }
   }
@@ -223,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (estimatorSelected.length > 0) {
         const servicesText = estimatorSelected.map(s => `• ${s.name} (PKR ${s.price.toLocaleString()})`).join('%0A');
         const waMessage = `Hello Paras Blush Salon, I customized my own Beauty & Bridal Package:%0A%0A${servicesText}%0A%0ATotal Estimated Price: PKR ${total.toLocaleString()}%0A%0AI'd like to book an appointment for this customized treatment package.`;
-        estimatorBtn.setAttribute('href', `https://wa.me/923332757343?text=${waMessage}`);
+        estimatorBtn.setAttribute('href', `https://wa.me/${SALON_CONTACT_CONFIG.whatsappNumber}?text=${waMessage}`);
         estimatorBtn.style.opacity = '1';
         estimatorBtn.style.pointerEvents = 'auto';
       } else {
@@ -264,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
                      `• *Message/Notes:* ${encodeURIComponent(notes || 'No specific notes')}%0A%0A` +
                      `Please confirm if this slot or time is available for booking. Thank you!`;
 
-      const whatsappURL = `https://wa.me/923332757343?text=${waText}`;
+      const whatsappURL = `https://wa.me/${SALON_CONTACT_CONFIG.whatsappNumber}?text=${waText}`;
       
       // Redirect to WhatsApp
       window.open(whatsappURL, '_blank');
